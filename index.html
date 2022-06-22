@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pyramis Pulmentum</title>
+    <link rel="shortcut icon" href="Website/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Website/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <!--Nav bar-->
+        <nav>
+            <div class="logo">
+                <a href="#home" class="logotext">Pyramis Pulmentum</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#Download">Download</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Feedback">Feedback</a></li>
+            </ul>
+            <!--Burger menu-->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!--Section 1-->
+        <section class="section1" id="home">
+            <!--Parallax pictures-->
+            <img src="Website/images/forest.png" id="forest">
+            <img src="Website/images/rocks.png" id="rocks">
+            <img src="Website/images/water.png" id="water">
+            <img src="Website/images/bird1.png" id="bird1">
+            <img src="Website/images/bird2.png" id="bird2">
+
+            <h1 id="heading">Pyramis Pulmentum</h1>
+        </section>
+
+        <!--Section 2-->
+        <section class="section2" id="cameras">
+            <h1 id="birds-heading">Наблюдавай птиците в Бургас и ги пази!</h1>
+            <!--Glassmorphism bubble-->
+            <div class="container1"><div class="glassmorphism1"></div></div>
+            <!--Video-->
+            <div id="live-video-grid">
+                <div id="video-container">
+                    <!--Actual live video-->
+                    <!-- <iframe id="live-video" src="https://www.youtube.com/embed/fLX5RMMqjzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <video id="live-video" controls>
+                        <source src="Website/videos/Къдроглави пеликани.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="save-the-birds">
+                    <h1 id="cameras-text">Онлайн камера - Пеликани Вая</h1>
+                    <h3 id="save-the-birds-text">През последните години забелязваме тенденция на изчезване на някои застрашени видове от защитените паркове, затова поставихме камери на някои от гнездата на птците, за да можем да ги следим 24 часа в денонощието. Ако случайно забележите
+                        нещо нередно или имате идея как да помогнем на животните - дайте вашите идеи ТУК.</h3>
+                    <button id="tips-button"><a href="Website/Forum.html">Дай идея за опазване</a></button>
+                </div>
+            </div>
+            <!--Glassmorphism bubble-->
+            <div class="container2"><div class="glassmorphism2"></div></div>
+        </section>
+
+        <!--Section 3-->
+        <section class="section3" id="info">
+            <h1 id="map-text">Кликнете на иконките на езерата, за да ги разгледате!</h1>
+            <!--Map-->
+            <div id="mapid"></div>
+            <!--Pop-ups-->
+            <div class="info1">
+                <div id="text">
+                    <h1 class="lake-heading">Езеро Вая (Бургаско езеро)</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li>Дом на близо 260 вида птици</li>
+                        <li>9 вида са рядко срещани</li>
+                        <li>Солено езеро</li>
+                        <li>Най-голямото естествено езеро в България</li>
+                        <li>Площ - 28 км2</li>
+                        <li>Дълбочина - 1.3м</li>
+                        <li><a class = "lakes-links" href = "https://bulgariatravel.org/bg/%D0%B1%D1%83%D1%80%D0%B3%D0%B0%D1%81%D0%BA%D0%BE-%D0%B5%D0%B7%D0%B5%D1%80%D0%BE/">Прочети още</a></li>
+                    </ul>
+                </div>
+                <button class="exit-button">X</button>
+            </div>
+            <div class="info2">
+                <div id="text">
+                    <h1 class="lake-heading">Язовир Мандра (Мандренско езеро)</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li>Дом на над 250 вида птици</li>
+                        <li>Площ - 16.5km2</li>
+                        <li>Дълбочина - 5m</li>
+                        <li>Сладко езеро</li>
+                        <li><a class = "lakes-links" href = "https://pochivka.bg/yazovir-mandra-mandrenskoto-ezero-e1447">Прочети още</a></li>
+                    </ul>
+                </div>
+                <button class="exit-button1">X</button>
+            </div>
+            <div class="info3">
+                <div id="text">
+                    <h1 class="lake-heading">Атанасовско езеро</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li>Дом на над 300 вида птици</li>
+                        <li>Площ - 7208.89ha</li>
+                        <li>Дълбочина - 0.8 – 0.9m</li>
+                        <li>Солено езеро</li>
+                        <li><a class = "lakes-links" href = "https://bulgariatravel.org/bg/%D0%B0%D1%82%D0%B0%D0%BD%D0%B0%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%BE-%D0%B5%D0%B7%D0%B5%D1%80%D0%BE-%D0%BF%D0%BE%D0%B4%D0%B4%D1%8A%D1%80%D0%B6%D0%B0%D0%BD-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%B0/">Прочети още</a></li>
+                    </ul>
+                </div>
+                <button class="exit-button2">X</button>
+            </div>
+            <div class="info4">
+                <div id="text">
+                    <h1 class="lake-heading">Солници Бургас</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li>Защитена местност</li>
+                        <li>Туристически обект</li>
+                        <li>Площ - 965.3ha</li>
+                        <li>Солен басейн</li>
+                        <li><a class = "lakes-links" href = "https://www.gotoburgas.com/bg/places-to-go/view/17">Прочети още</a></li>
+                    </ul>
+                </div>
+                <button class="exit-button3">X</button>
+            </div>
+            <div class="info5">
+                <div id="text">
+                    <h1 class="lake-heading">Пода</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li>Дом на над 231 вида висши растения,</li>
+                        <li>168 вида безгръбначни,</li>
+                        <li>6 вида риби,</li>
+                        <li>16 вида земноводни и влечуги,</li>
+                        <li>273 вида птици,</li>
+                        <li>18 вида бозайници</li>
+                        <li>Площ - 107ha</li>
+                        <li><a class = "lakes-links" href = "https://bspb.org/poda/bg/index.html">Прочети още</a></li>
+                    </ul>
+                </div>
+                <button class="exit-button4">X</button>
+            </div>
+            <div class="info6">
+                <div id="text">
+                    <h1 class="lake-heading">Узунгерен (Мандренско блато)</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li>Дом на над 200 вида птици</li>
+                        <li>Площ - 211.1ha</li>
+                        <li>Дълбочина - 1m</li>
+                        <li>Солено езеро</li>
+                        <li><a class = "lakes-links" href = "http://www.hotelmap.bg/%D0%B1%D1%83%D1%80%D0%B3%D0%B0%D1%81-%D0%B7%D0%B0%D0%B1%D0%B5%D0%BB%D0%B5%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%BD%D0%BE%D1%81%D1%82-%D0%B5%D0%B7%D0%B5%D1%80%D0%BE-%D1%83%D0%B7%D1%83%D0%BD%D0%B3%D0%B5%D1%80%D0%B5%D0%BD.html">Прочети още</a></li>
+                    </ul>
+                </div>
+                <button class="exit-button5">X</button>
+            </div>
+            <div class="info7">
+                <div id="text">
+                    <h1 class="lake-heading">Поморийско езеро</h1>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li>Дом на над 270 вида птици</li>
+                        <li>Площ - 7 - 8.5km2</li>
+                        <li>Дълбочина - 1.4m</li>
+                        <li>Солено езеро</li>
+                        <li><a class = "lakes-links" href = "https://greenbalkans.org/pomorielake/">Прочети още</a></li>
+                    </ul>
+                </div>
+                <button class="exit-button6">X</button>
+            </div>
+            <!--Glassmorphism bubble-->
+            <div class="container3"><div class="glassmorphism3"></div></div>
+            <!--Search button-->
+            <button id="search-button">
+                <i class="fas fa-search"></i> Търси
+                <input class="search-text" type="text">
+            </button>
+            <h3 id="birds-text">Кликнете на картите с птици, за да видите повече информация!</h3>
+            <!--Flipping info cards-->
+            <div id="info-cards">
+                <!--Card 1-->
+                <div class="scene1">
+                    <div class="card1">
+                        <div class="face front1">
+                            <img class="bird" src="Website/images/birds/bird1.jpg">
+                            <p class="birds-names">Червеногуша гъска</p>
+                        </div>
+                        <div class="face back1">
+                            <ul class="cardText">
+                                <li>Палеарктичен вид</li>
+                                <li>Гнезди в България</li>
+                                <li>38 500 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="chervenogusha-guska" href="https://savebranta.org/#more-6">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="scene2">
+                    <div class="card2">
+                        <div class="face front2">
+                            <img class="bird" src="Website/images/birds/bird2.jpg">
+                            <p class="birds-names">Египетски лешояд</p>
+                        </div>
+                        <div class="face back2">
+                            <ul class="cardText">
+                                <li>Индиански вид</li>
+                                <li>Гнезди в България</li>
+                                <li>12 000 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="egipetski-leshoqd" href="https://greenbalkans.org/birdsofprey/indexdetails.php?menu_id=95">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="scene3">
+                    <div class="card3">
+                        <div class="face front3">
+                            <img class="bird" src="Website/images/birds/bird3.jpg">
+                            <p class="birds-names">Големият креслив орел</p>
+                        </div>
+                        <div class="face back3">
+                            <ul class="cardText">
+                                <li>Палеарктичен вид</li>
+                                <li>Гнезди в България</li>
+                                <li>2200 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="kresliv-orel" href="http://e-ecodb.bas.bg/rdb/bg/vol2/Aqclanga.html">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="scene4">
+                    <div class="card4">
+                        <div class="face front4">
+                            <img class="bird" src="Website/images/birds/bird4.jpg">
+                            <p class="birds-names">Къдроглав пеликан</p>
+                        </div>
+                        <div class="face back4">
+                            <ul class="cardText">
+                                <li>Зимуващ вид</li>
+                                <li>Гнезди в България</li>
+                                <li>850 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="kudroglav-pelikan" href="https://viapontica.org/bg/%D0%BA%D1%8A%D0%B4%D1%80%D0%BE%D0%B3%D0%BB%D0%B0%D0%B2-%D0%BF%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD-pelecanus-crispus/">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 5-->
+                <div class="scene5">
+                    <div class="card5">
+                        <div class="face front5">
+                            <img class="bird" src="Website/images/birds/bird5.jpg">
+                            <p class="birds-names">Ледена потапница</p>
+                        </div>
+                        <div class="face back5">
+                            <ul class="cardText">
+                                <li>Арктичен вид</li>
+                                <li>Гнезди в България</li>
+                                <li>2000 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="kudroglav-pelikan" href="http://birdsofeurope.eu/birds.php?l=bg&cat=1&sub=12&vid=64&type=bird">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 6-->
+                <div class="scene6">
+                    <div class="card6">
+                        <div class="face front6">
+                            <img class="bird" src="Website/images/birds/bird6.jpg">
+                            <p class="birds-names">Малката белочела гъска</p>
+                        </div>
+                        <div class="face back6">
+                            <ul class="cardText">
+                                <li>Европейски вид</li>
+                                <li>Гнезди в България</li>
+                                <li>28 000 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="malka-belonoga-guska" href="http://e-ecodb.bas.bg/rdb/bg/vol2/Anerythr.html">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 7-->
+                <div class="scene7">
+                    <div class="card7">
+                        <div class="face front7">
+                            <img class="bird" src="Website/images/birds/bird7.jpg">
+                            <p class="birds-names">Морски буревестник</p>
+                        </div>
+                        <div class="face back7">
+                            <ul class="cardText">
+                                <li>Черноморски вид</li>
+                                <li>Гнезди в България</li>
+                                <li>1800 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="morski-burevestnik" href="https://bspb.org/ptici/%D1%81%D1%80%D0%B5%D0%B4%D0%B8%D0%B7%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B8-%D0%B1%D1%83%D1%80%D0%B5%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D0%B8%D0%BA/">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 8-->
+                <div class="scene8">
+                    <div class="card8">
+                        <div class="face front8">
+                            <img class="bird" src="Website/images/birds/bird8.jpg">
+                            <p class="birds-names">Тръноклюн свирец</p>
+                        </div>
+                        <div class="face back8">
+                            <ul class="cardText">
+                                <li>Зимуващ вид</li>
+                                <li>Гнезди в България</li>
+                                <li>100 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="trunoklun-svirec" href="https://ptitsiii.alle.bg/%D0%BB%D0%B5%D1%82%D1%8F%D1%89%D0%B8-%D0%BF%D1%82%D0%B8%D1%86%D0%B8/%D1%81%D0%B2%D0%B8%D1%80%D0%B5%D1%86/%D1%82%D1%8A%D0%BD%D0%BA%D0%BE%D0%BA%D0%BB%D1%8E%D0%BD-%D1%81%D0%B2%D0%B8%D1%80%D0%B5%D1%86/">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 9-->
+                <div class="scene9">
+                    <div class="card9">
+                        <div class="face front9">
+                            <img class="bird" src="Website/images/birds/bird9.jpg">
+                            <p class="birds-names">Тръноопашата потапница</p>
+                        </div>
+                        <div class="face back9">
+                            <ul class="cardText">
+                                <li>Мигриращ вид</li>
+                                <li>Гнезди в България</li>
+                                <li>2260 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="trunoopashata-potapnica" href="https://viapontica.org/bg/%D1%82%D1%80%D1%8A%D0%BD%D0%BE%D0%BE%D0%BF%D0%B0%D1%88%D0%B0%D1%82%D0%B0-%D0%BF%D0%BE%D1%82%D0%B0%D0%BF%D0%BD%D0%B8%D1%86%D0%B0-oxyura-leucocephala/?__cf_chl_jschl_tk__=5b16d8b9989f4d35b5572913faf534d17d99b8fc-1623929168-0-AaX2ci0SLh0ijMBCanJYi4J77Ubp9HKq_9mj62LVQCF4hKvSdZLWoQnOlLtta-9LfmOm3vQe2o8CQZ1-ou-drHB3RRDj10LsX6iMJS_28SixjatIWLBEfVlHmbQixAxkpPfmU9cbSbmzbGXbOi_q0cHBvIeyEDRZhhxaDbngJ3vu4wzHz5al26_MnEnf53DOE-QeX6VzdqA9iWsNBfuYRR_UwKc35FoXgNpHhIvSI8l6_3XfElnSgAvYsAcnlZT-UK-nynbjCFFORKFY2SK8cigGeIkHGaQdSjl9NB_Hv2Yp2SaYJJM9G7qKF7l5K_X-E4aJvJVnM4jUEkpGlPTeIGFajiy082ny_2inOTWl9yKbJtg1rTNorB9DGKfWWp9f0g6gISqcDWioybB2IiW3faD6Jm4kXbirAmrhf1fn0lgwSm-yotE10wbapB0sdZwIpnPuuYLKsUIO4lXJTvw4PMeomRwiGlOD1CKTdNNXe65R_-YCMGmZG0ofyXQzM88J-duUun_1VFpcssrIXLNm3OEBcpetY-tu4c-TlH-Z3EKcOkQAOTo5ve1CS5q4FUDgW9SwNLcVpCV-HZhx8ox5nCU">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 10-->
+                <div class="scene10">
+                    <div class="card10">
+                        <div class="face front10">
+                            <img class="bird" src="Website/images/birds/bird10.jpg">
+                            <p class="birds-names">Водното шаварче</p>
+                        </div>
+                        <div class="face back10">
+                            <ul class="cardText">
+                                <li>Уязвим вид</li>
+                                <li>Гнезди в България</li>
+                                <li>20 000 птици</li>
+                            </ul>
+                            <a class="birds-links" alt="vodno-shavarche" href="https://bg.shops-net.com/57251/1/vodno-shavarche.html#article">Прочети още</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Glassmorphism bubble-->
+            <div class="container4"><div class="glassmorphism4"></div></div>
+            <div class="container5"><div class="glassmorphism5"></div></div>
+        </section>
+
+        <!--Section 4-->
+        <section class="section4" id="stats">
+            
+        </section>
+
+        <!--Section 5-->
+        <section class="section5">
+            <!--Footer-->
+            <div class="footer-distributed">
+
+                <div class="footer-left">
+
+                    <h3>Pyramis Pulmentum</h3>
+
+                    <p class="footer-links">
+                        <a href="#Download">Download</a> |
+                        <a href="#About">About</a> |
+                        <a href="#Feedback">Feedback</a> 
+                    </p>
+
+                    <p class="footer-company-name">© 2022 Pyramis Pulmentum - No pain, no gain</p>
+                </div>
+
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>8000,
+                            Vasil Levski 34</span> Bulgaria, Burgas - 1234</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>088-634-6857</p>
+                    </div>
+                    <div>
+                        <p><i class="fa fa-envelope"></i>
+                            <nbsp;><a href="mailto:PyramisPulmentumProject@gmail.com">PyramisPulmentumProject@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>Social media</span> Support us by following us in our social media platforms!<br>
+                        Thank you in advance! </p>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/58dbd7504d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/venn.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="Website/JavaScript/map.js"></script>
+    <script src="Website/JavaScript/main.js"></script>
+    <script src="Website/JavaScript/parallax.js"></script>
+    <script src="Website/JavaScript/charts.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('serviceWorker.js');
+        }
+    </script>
+</body>
+
+</html>
