@@ -12,7 +12,6 @@
         --yellow: #f3d100;
         --red: #cf5e46;
         --black: rgb(27, 27, 27);
-        --darkbrown: #483B3A;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
@@ -1029,7 +1028,7 @@
     }
     
     .footer-distributed {
-        background-color: var(--darkbrown);
+        background-color: var(--red);
         box-sizing: border-box;
         width: 100%;
         text-align: left;
@@ -1084,7 +1083,7 @@
     }
     
     .footer-distributed .footer-center i {
-        background-color: var(--darkteal);
+        background-color: var(--red);
         color: var(--white);
         font-size: 25px;
         width: 38px;
@@ -1151,7 +1150,7 @@
         width: 35px;
         height: 35px;
         cursor: pointer;
-        background-color: var(--darkteal);
+        background-color: var(--red);
         border-radius: 2px;
         font-size: 20px;
         color: var(--white);
@@ -1160,7 +1159,7 @@
         margin-right: 3px;
         margin-bottom: 5px;
     }
-    
+
     @media only screen and (max-width: 880px) {
         .footer-distributed .footer-left,
         .footer-distributed .footer-center,
