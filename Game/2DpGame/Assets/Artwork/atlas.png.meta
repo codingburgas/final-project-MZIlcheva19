@@ -1312,6 +1312,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: waterF_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d123f71bc1a5c7b488ac14cce08269f6
+      internalID: -2108932325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterF_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21885ce4a2a887148b2aeccdb8eff0d1
+      internalID: 1967077523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1324,6 +1366,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       atlas_7: -2055063748
+      waterF_1: -2108932325
       stairs_0: 2000095127
       wall_0: 641795698
       torch_0: 1427447689
@@ -1363,6 +1406,7 @@ TextureImporter:
       wall_2: -1639286425
       floor_basic: -879712573
       wall_6: -1308225081
+      waterF_0: 1967077523
       floor_8: 1273863657
       floor_11: 83461907
       floor_00: 8444146
