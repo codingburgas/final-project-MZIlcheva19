@@ -1354,6 +1354,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ForestPurdej_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578bca07bf86b5540a5d66d1530559f6
+      internalID: -1144167153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestPurdej_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9f8b96dd955704a86d553d6956034b
+      internalID: -1234208965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterDooDoo_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 47
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26c51d220754e84493e8cf50917e243
+      internalID: 1691371407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterDooDoo_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 31
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a932b1ea6e95f64ab06fc91d0e7d23e
+      internalID: 501997845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireDooDoo_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 48
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918eea6792c39f24a87c5bb4732dfba1
+      internalID: 1254528201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireDooDoo_01
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84efd8c3e8759fe4e9b0196d0676f76d
+      internalID: 1344759760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spiritkeks
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 32
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a0e97af221616458d2661b51a8de5d
+      internalID: 94449656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritkeks01
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 48
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef1647ac480cd94ebce6445e1168a81
+      internalID: 1123771678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1365,6 +1533,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      FireDooDoo_01: 1344759760
       atlas_7: -2055063748
       waterF_1: -2108932325
       stairs_0: 2000095127
@@ -1374,15 +1543,18 @@ TextureImporter:
       crape_1: 806203247
       floor_7: -843622449
       wall_1: -50185892
+      WaterDooDoo_1: 501997845
       floor_5: -1433524823
       box_1: 1459527975
       torch_2: -474634595
       box_4: -532006848
       player_0: 1835116885
       floor_4: 114151080
+      Spiritkeks: 94449656
       wall_3: -904379261
       wall_5: 502979516
       special_floor_0: 1460679486
+      FireDooDoo_0: 1254528201
       torch_6: 842192275
       healingFountain_0: 600919784
       torch_3: 1050636355
@@ -1390,6 +1562,7 @@ TextureImporter:
       floor_2: 1761361813
       floor_10: 180774685
       healingFountain_1: -1277097118
+      WaterDooDoo_0: 1691371407
       torch_4: 628666970
       healingFontain_2: -112187647
       skull_0: -29752481
@@ -1401,6 +1574,7 @@ TextureImporter:
       torch_5: -2060786458
       floor_0: 1058667896
       crape_2: 526653046
+      ForestPurdej_1: -1144167153
       crape_0: 1114599278
       crape_3: 791891327
       wall_2: -1639286425
@@ -1420,9 +1594,11 @@ TextureImporter:
       stairs_2: -1692836964
       floor_3: 249302807
       box_3: 518037069
+      ForestPurdej_0: -1234208965
       stairs_3: -1235185608
       box_2: -733399219
       wall_7: -915407707
+      spiritkeks01: 1123771678
       atlas_1: 800807712
   spritePackingTag: 
   pSDRemoveMatte: 0
