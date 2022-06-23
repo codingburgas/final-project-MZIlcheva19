@@ -12,6 +12,7 @@
         --yellow: #f3d100;
         --red: #cf5e46;
         --black: rgb(27, 27, 27);
+        --brown: #62232f;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
@@ -69,7 +70,7 @@
         justify-content: space-around;
         align-items: center;
         min-height: 8vh;
-        background-color: var(--red);
+        background-color: var(--brown);
         z-index: 4;
     }
     
@@ -107,7 +108,7 @@
     
     .nav-links a:hover {
         font-weight: bold;
-        color: #bbff5d;
+        color: #cf5e46;
         transition: .2s;
     }
     
@@ -1028,7 +1029,7 @@
     }
     
     .footer-distributed {
-        background-color: var(--red);
+        background-color: var(--brown);
         box-sizing: border-box;
         width: 100%;
         text-align: left;
@@ -1150,7 +1151,7 @@
         width: 35px;
         height: 35px;
         cursor: pointer;
-        background-color: var(--red);
+        background-color: var(--brown);
         border-radius: 2px;
         font-size: 20px;
         color: var(--white);
