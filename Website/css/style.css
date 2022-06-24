@@ -1071,7 +1071,7 @@
     }
     
     .footer-distributed .footer-company-name {
-        color: var(--lightblue);
+        color: var(--red);
         font-size: 14px;
         font-weight: normal;
         margin: 0;
@@ -1084,7 +1084,7 @@
     }
     
     .footer-distributed .footer-center i {
-        background-color: var(--red);
+        background-color: var(--brown);
         color: var(--white);
         font-size: 25px;
         width: 38px;
@@ -1128,7 +1128,7 @@
     
     .footer-distributed .footer-company-about {
         line-height: 20px;
-        color: var(--lightblue);
+        color: var(--red);
         font-size: 15px;
         font-weight: normal;
         margin: 0;
