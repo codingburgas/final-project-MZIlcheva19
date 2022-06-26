@@ -3,9 +3,11 @@
 
 <head>
     <title>Pyramis Pulmentum</title>
-    <link rel="shortcut icon" href="Website/images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="Website/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +22,9 @@
                 <a href="#home" class="logotext">Pyramis Pulmentum</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#Download">Download</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Feedback">Feedback</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feedback">Feedback</a></li>
             </ul>
             <!--Burger menu-->
             <div class="burger">
@@ -34,24 +36,22 @@
         <!--Section 1-->
         <section class="section1" id="home">
             <!--Parallax pictures-->
-            <img src="Website/images/forest.png" id="forest">
+            <!-- <img src="Website/images/forest.png" id="forest">
             <img src="Website/images/rocks.png" id="rocks">
             <img src="Website/images/water.png" id="water">
             <img src="Website/images/bird1.png" id="bird1">
-            <img src="Website/images/bird2.png" id="bird2">
+            <img src="Website/images/bird2.png" id="bird2"> -->
 
             <h1 id="heading">Pyramis Pulmentum</h1>
         </section>
 
         <!--Section 2-->
-        <section class="section2" id="cameras">
+        <section class="section2" id="download">
             <h1 id="birds-heading">Welcome!</h1>
-            <!--Glassmorphism bubble-->
-            <div class="container1"><div class="glassmorphism1"></div></div>
             <!--Video-->
                     <!--Actual live video-->
         <!--Section 3-->
-        <section class="section3" id="info">
+        <section class="section3" id="about">
             <h1 id="map-text">Download the game.</h1>
             <!--Map-->
             <div id="mapid"></div>
@@ -173,13 +173,6 @@
                 </div>
                 <button class="exit-button6">X</button>
             </div>
-            <!--Glassmorphism bubble-->
-            <div class="container3"><div class="glassmorphism3"></div></div>
-            <!--Search button-->
-            <button id="search-button">
-                <i class="fas fa-search"></i> Търси
-                <input class="search-text" type="text">
-            </button>
             <h3 id="birds-text">Click on the cards to see more detail!</h3>
             <!--Flipping info cards-->
             <div id="info-cards">
@@ -188,15 +181,14 @@
                     <div class="card1">
                         <div class="face front1">
                             <img class="bird" src="Website/images/birds/bird1.jpg">
-                            <p class="birds-names">Червеногуша гъска</p>
+                            <p class="birds-names">Vard</p>
                         </div>
                         <div class="face back1">
                             <ul class="cardText">
-                                <li>Палеарктичен вид</li>
-                                <li>Гнезди в България</li>
-                                <li>38 500 птици</li>
+                                <li>Main character</li>
+                                <li>27 301 orcs killed</li>
+                                <li>son of Loki</li>
                             </ul>
-                            <a class="birds-links" alt="chervenogusha-guska" href="https://savebranta.org/#more-6">Прочети още</a>
                         </div>
                     </div>
                 </div>
@@ -205,15 +197,13 @@
                     <div class="card2">
                         <div class="face front2">
                             <img class="bird" src="Website/images/birds/bird2.jpg">
-                            <p class="birds-names">Египетски лешояд</p>
+                            <p class="birds-names">Dumbal</p>
                         </div>
                         <div class="face back2">
                             <ul class="cardText">
-                                <li>Индиански вид</li>
-                                <li>Гнезди в България</li>
-                                <li>12 000 птици</li>
+                                <li>Magician</li>
+                                <li>Friend of Vard</li>
                             </ul>
-                            <a class="birds-links" alt="egipetski-leshoqd" href="https://greenbalkans.org/birdsofprey/indexdetails.php?menu_id=95">Прочети още</a>
                         </div>
                     </div>
                 </div>
@@ -222,15 +212,14 @@
                     <div class="card3">
                         <div class="face front3">
                             <img class="bird" src="Website/images/birds/bird3.jpg">
-                            <p class="birds-names">Големият креслив орел</p>
+                            <p class="birds-names">Uruk-hai</p>
                         </div>
                         <div class="face back3">
                             <ul class="cardText">
-                                <li>Палеарктичен вид</li>
-                                <li>Гнезди в България</li>
-                                <li>2200 птици</li>
+                                <li>Orc</li>
+                                <li>Main villain</li>
+                                <li>64 938 kills</li>
                             </ul>
-                            <a class="birds-links" alt="kresliv-orel" href="http://e-ecodb.bas.bg/rdb/bg/vol2/Aqclanga.html">Прочети още</a>
                         </div>
                     </div>
                 </div>
@@ -354,25 +343,11 @@
                     </div>
                 </div>
             </div>
-            <!--Glassmorphism bubble-->
-            <div class="container2"><div class="glassmorphism2"></div></div>
-        </section>
-
-        <!--Section 3-->
-        <section class="section3" id="info">
-            <h1 id="map-text">Кликнете на иконките на езерата, за да ги разгледате!</h1>
-            <!--Map-->
-            <div id="mapid"></div>
-            <!--Pop-ups-->
-           
-            <!--Glassmorphism bubble-->
-            <div class="container4"><div class="glassmorphism4"></div></div>
-            <div class="container5"><div class="glassmorphism5"></div></div>
         </section>
 
         <!--Section 4-->
-        <section class="section4" id="stats">
-            
+        <section class="section4" id="feedback">
+        <h1 id="map-text">Tell us what you think.</h1> 
         </section>
 
         <!--Section 5-->
@@ -385,9 +360,9 @@
                     <h3>Pyramis Pulmentum</h3>
 
                     <p class="footer-links">
-                        <a href="#Download">Download</a> |
-                        <a href="#About">About</a> |
-                        <a href="#Feedback">Feedback</a> 
+                        <a href="#download">Download</a> |
+                        <a href="#about">About</a> |
+                        <a href="#feedback">Feedback</a> 
                     </p>
 
                     <p class="footer-company-name">© 2022 Pyramis Pulmentum - No pain, no gain</p>
