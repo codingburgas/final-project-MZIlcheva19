@@ -423,7 +423,7 @@
         line-height: 100%;
         width: 0%;
     }
-   
+
     /* Map */
 
     #mapid {
@@ -995,3 +995,29 @@
             margin-left: 0;
         }
     }
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        min-height:100vh;
+        display:grid;
+        place-items:center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .download-btn{
+        background-color: rgb(143, 6, 17);
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        text-decoration: none;
+        border-radius:10px;
+    }
+    
+    .download-btn:hover {
+        background-color: rgb(88, 6, 10);
+      }
