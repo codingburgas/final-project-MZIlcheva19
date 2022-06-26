@@ -710,7 +710,7 @@
         font-size: 240%;
         color: var(--white);
         margin-bottom: 1%;
-        margin-top: 6%;
+        margin-top: 15%;
     }
 
     #pic-text {
@@ -1013,11 +1013,36 @@
         background-color: rgb(143, 6, 17);
         color: white;
         padding: 1rem 2rem;
-        font-size: 2rem;
+        font-size: 15pt;
         text-decoration: none;
         border-radius:10px;
+        margin-top: 20px;
+        margin-left: 120pt;
+        margin-right: 120pt;
+        margin-bottom: 150;
+        position:static;      
     }
     
     .download-btn:hover {
         background-color: rgb(88, 6, 10);
       }
+
+    #download-text {
+        color: white;
+        text-align: left;
+        margin-top: 3pt;
+        margin-left: 25pt;
+        margin-right: 45%;
+        margin-bottom: 5%;
+        font-size: 20pt;
+    }
+
+    #download-image{
+        float:right;
+        margin-left:5%;
+        margin-right:2%;
+        margin-bottom: 50pt;
+        border-radius: 15px;
+        width: 500px;
+        margin-top:-130pt;
+    }
