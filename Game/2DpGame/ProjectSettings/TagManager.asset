@@ -51,3 +51,6 @@ TagManager:
   - name: Blocking
     uniqueID: 1755410313
     locked: 0
+  - name: Interactable
+    uniqueID: 1800378365
+    locked: 0
