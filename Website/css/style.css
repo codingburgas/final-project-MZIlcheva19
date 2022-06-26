@@ -13,6 +13,8 @@
         --red: #cf5e46;
         --black: rgb(27, 27, 27);
         --brown: #62232f;
+        --wine: #8F250C;
+        --darkwine: #6F1D1B;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
@@ -593,7 +595,7 @@
     }
     
     .back1 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
     
@@ -603,7 +605,7 @@
     }
     
     .back2 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
     
@@ -613,7 +615,7 @@
     }
     
     .back3 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
     
@@ -623,7 +625,7 @@
     }
     
     .back4 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
     
@@ -633,7 +635,7 @@
     }
     
     .back5 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
     
@@ -643,7 +645,7 @@
     }
     
     .back6 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
     
@@ -653,7 +655,7 @@
     }
     
     .back7 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
     
@@ -663,7 +665,7 @@
     }
     
     .back8 {
-        background-color: var(--ashblue);
+        background-color: var(--wine);
         transform: rotateY(180deg);
     }
 
@@ -671,7 +673,7 @@
     
     .pic {
         margin-top: 10px;
-        width: 90px;
+        width: 110px;
     }
     
     #pic-heading {
@@ -699,8 +701,8 @@
     
     .pic-names {
         padding-top: 10px;
-        color: var(--drakgreen);
-        font-size: 18px;
+        color: var(--darkwine);
+        font-size: 15px;
         font-weight: bold;
         letter-spacing: 2px;
     }
