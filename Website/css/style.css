@@ -578,22 +578,6 @@
         transform-style: preserve-3d;
     }
     
-    .card9 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        transition: transform 0.5s;
-        transform-style: preserve-3d;
-    }
-    
-    .card10 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        transition: transform 0.5s;
-        transform-style: preserve-3d;
-    }
-    
     .face {
         width: 100%;
         height: 100%;
@@ -682,35 +666,15 @@
         background-color: var(--ashblue);
         transform: rotateY(180deg);
     }
-    
-    .front9 {
-        background-color: var(--white);
-        transform: rotateY(0deg);
-    }
-    
-    .back9 {
-        background-color: var(--ashblue);
-        transform: rotateY(180deg);
-    }
-    
-    .front10 {
-        background-color: var(--white);
-        transform: rotateY(0deg);
-    }
-    
-    .back10 {
-        background-color: var(--ashblue);
-        transform: rotateY(180deg);
-    }
 
     /*Birds pictures*/
     
-    .bird {
-        margin-top: 20px;
-        width: 130px;
+    .pic {
+        margin-top: 10px;
+        width: 90px;
     }
     
-    #birds-heading {
+    #pic-heading {
         font-size: 240%;
         color: var(--white);
         text-align: center;
@@ -718,7 +682,7 @@
         margin-bottom: 3.5%;
     }
 
-    .birds-links  {
+    .pic-links  {
         text-decoration: none;
         color: #2dffc7;
         padding-top: 5px;
@@ -733,7 +697,7 @@
         line-height: 25px;
     }
     
-    .birds-names {
+    .pic-names {
         padding-top: 10px;
         color: var(--drakgreen);
         font-size: 18px;
@@ -749,7 +713,7 @@
         margin-top: 6%;
     }
 
-    #birds-text {
+    #pic-text {
         text-align: center;
         font-size: 200%;
         color: var(--white);
