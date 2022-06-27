@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;//keep track of the delta moovement[players current position]
-    private RaycastHit2D hit; //can we go there (throught the wall? Now we can't :D)
+    private RaycastHit2D hit; //can we go there (throught the wall? Now we can't)
     private void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
