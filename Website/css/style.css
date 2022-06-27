@@ -1,15 +1,5 @@
     :root {
         --white: #f6fcfc;
-        --lightblue: #81c7e0;
-        --mediumblue: #210909;
-        --darkteal: #007c94;
-        --ashblue: #617ca9;
-        --darkblue: #003479;
-        --lightteal: #00c0c3;
-        --mediumteal: #10bcdf;
-        --drakgreen: #017e5c;
-        --lightgreen: #8ed32f;
-        --yellow: #f3d100;
         --red: #cf5e46;
         --black: rgb(27, 27, 27);
         --brown: #62232f;
@@ -31,7 +21,7 @@
     /* Custom selection */
     ::selection{
         color: white;
-        background-color:rgba(44, 48, 116, 0.589);
+        background-color:rgba(190, 35, 35, 0.801);
     }
 
     /* Custom scrollbar */
@@ -42,7 +32,7 @@
     
     body {
         scrollbar-width: thin;
-        scrollbar-color: #90A4AE #CFD8DC;
+        scrollbar-color: #570f0f #CFD8DC;
     }
     
     body::-webkit-scrollbar-track {
@@ -50,7 +40,7 @@
     }
     
     body::-webkit-scrollbar-thumb {
-        background-color: #90A4AE;
+        background-color: #810000;
         border-radius: 6px;
         border: 3px solid #CFD8DC;
     }
@@ -78,7 +68,7 @@
     .logo {
         text-transform: uppercase;
         letter-spacing: 5px;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .logotext {
@@ -140,7 +130,7 @@
             right: 0px;
             height: 92vh;
             top: 8vh;
-            background-color: var(--lightblue);
+            background-color: #4e151f;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -225,8 +215,6 @@
         z-index: 3;
         mix-blend-mode: color;
     }
-    
-    /* Parallax images */
 
     .section1 img {
         position: absolute;
@@ -238,23 +226,9 @@
         pointer-events: none;
     }
 
-    #rocks {
-        z-index: 2;
-    }
-
-    @media only screen and (max-width: 550px) {
-        #rocks, #bird1, #bird2 {
-            display: none;
-        }
-    }
-
-    #water {
-        z-index: 2;
-    }
-
     #heading {
         text-align: center;
-        font-size: 80px;
+        font-size: 73px;
         position: relative;
         z-index: 1;
         margin-bottom: 250px;
@@ -270,68 +244,78 @@
         background-color: #200907;
         z-index: -2;
     }
+    #heading-section2
+    {
+        color: white;
+        text-align: center;
+        margin-top: 70px; 
+        font-size: 46px;
+    }
+    .game-pic
+    {
+        width: 600px;
+        margin-left: 70px;
+        margin-top: 45px;
+    }
 
-    /* Live video */
+    .pic-text{
+        line-height: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 43px;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+    }
 
-    #live-video-grid {
+    #feedback-text
+    {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    #pic-grid {
         margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 2em, 4em;
     }
 
-    #video-container>video {
+    #pic>video {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    #live-video {
-        width: 90%;
-    }
-    
-    #cameras-text {
-        text-align: center;
-        font-size: 30px;
-        color: #005566;
-        margin-bottom: 3%;
-    }
-    
-    #save-the-birds-text {
-        width: 90%;
-        text-align: justify;
-        color: var(--white);
-        line-height: 155%;
-        margin-bottom: 4%;
-    }
 
-    #save-the-birds {
-        align-self: center;
-    }
+    /* Download button */
 
-    #tips-button {
+    .download-button {
         width: 70%;
-        font-size: 140%;
+        font-size: 20px;
         padding: 0.8% 3% 1.2% 4%;
         border: none;
-        background-color: var(--lightgreen);
-        color: var(--white);
+        background-color: white;
+        color: black;
         border-radius: 12px;
         z-index: 3;
         display: block;
         margin: 15px auto 0 auto;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-    #tips-button>a {
-        color: var(--white);
+    .download-button:hover {
+        color: rgb(51, 5, 5);
+        background-color: rgb(156, 156, 156);
     }
     
     @media only screen and (max-width: 880px) {
-        #live-video-grid {
+        #pic-grid {
             display: block;
         }
 
-        #video-container {
+        #pic-container {
             width: 90%;
             display: block;
             margin-left: auto;
@@ -343,14 +327,14 @@
             width: 100%;
         }
 
-        #save-the-birds-text {
+        #pic-text {
             margin-left: auto;
             margin-right: auto;
             display: block;
             text-align: center;
         }
 
-        #tips-button {
+        #download-button {
             margin-bottom: 7%;
         }
 
@@ -366,130 +350,6 @@
         grid-column: 1/3;
         background-color: var(--mediumblue);
         z-index: 0;
-    }
-
-    /* Search button */
-
-    #search-button {
-        margin-top: 5%;
-        margin-left: 30%;
-        width: 40%;
-        font-size: 100%;
-        padding: 0.6% 3% 0.8% 3%;
-        border: none;
-        background-color: var(--darkteal);
-        color: var(--white);
-        border-radius: 12px;
-    }
-
-    @media only screen and (max-width: 880px) {
-        #search-button {
-            width: 60%;
-            margin-left: 20%;
-            height: 1.5%;
-            display: block;
-            margin: 7% auto 1% auto;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
-        #search-button {
-            width: 80%;
-            margin-left: 10%;
-            height: 1%;
-            display: block;
-            margin: 7% auto 1% auto;
-        }
-    }
-    
-    #search-button:hover>.search-text {
-        width: 60%;
-        padding: 0 6px;
-    }
-    
-    .search-text:focus {
-        width: 60%;
-        padding: 0 6px;
-    }
-    
-    .search-text {
-        transform: translateY(15%);
-        border: none;
-        background: none;
-        outline: none;
-        float: right;
-        padding: 0;
-        color: var(--white);
-        font-size: 80%;
-        transition: 0.4s;
-        line-height: 100%;
-        width: 0%;
-    }
-
-    /* Map */
-
-    #mapid {
-        margin-top: 5vh;
-        height: 650px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 0;
-    }
-    
-    .leaflet-control-attribution {
-        display: none;
-    }
-    
-    .info1, .info2, .info3, .info4, .info5, .info6, .info7 {
-        position: relative;
-        margin-top: -542px;
-        margin-bottom: 100px;
-        margin-left: 19%;
-        border-radius: 15px;
-        width: 60%;
-        height: 400px;
-        display: none;
-        background: var(--darkteal);
-    }
-
-    .exit-button, .exit-button1, .exit-button2, .exit-button3, .exit-button4, .exit-button5, .exit-button6 {
-        position: absolute;
-        right: -1px;
-        top: -1px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        border-radius: 15px;
-        padding: .8em 1em;
-        background: rgba(255, 255, 255, 0.144);
-        box-shadow: rgba(255, 255, 255, 0.342) 0px 0px 0px 0.5px inset;
-        color: var(--white);
-        font-size: 1em;
-    }
-
-    #text {
-        overflow: auto;
-        font-size: 18px;
-        text-align: center;
-        height: 80%;
-        color: var(--white);
-        line-height: 140%;
-        justify-self: center;
-        align-self: center;
-        padding: 10% 5% 10% 5%;
-    }
-
-    #text>ul {
-        list-style-type: none;
-    }
-
-    .lakes-links{
-        text-decoration: none;
-        color: #2dffc7;
-        letter-spacing: 1px;
-        grid-column: 1/2;
-
     }
 
     /*Rotating cards*/
@@ -508,9 +368,7 @@
     .scene5,
     .scene6,
     .scene7,
-    .scene8,
-    .scene9,
-    .scene10 {
+    .scene8 {
         justify-self: center;
         width: 10em;
         height: 15em;
@@ -669,7 +527,7 @@
         transform: rotateY(180deg);
     }
 
-    /*Birds pictures*/
+    /*Characters/items pictures*/
     
     .pic {
         margin-top: 10px;
@@ -707,18 +565,18 @@
         letter-spacing: 2px;
     }
     
-    #map-text {
+    #cards-text {
         text-align: center;
-        font-size: 240%;
-        color: var(--white);
+        font-size: 43px;
+        color: white;
         margin-bottom: 1%;
-        margin-top: 15%;
+        margin-top: 104px;
     }
 
-    #pic-text {
+    #cards-text {
         text-align: center;
-        font-size: 200%;
-        color: var(--white);
+        font-size: 24px;
+        color: white;
         margin-top: 3%;
     }
     
@@ -732,227 +590,132 @@
     }
 
     
-.container{
-    position: relative;
-    left: 610px;
-    width: 600px;
-    background: #111;
-    padding: 20px 30px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .container .post{
-    display: none;
-  }
-  .container .text{
-    font-size: 25px;
-    color: #666;
-    font-weight: 500;
-  }
-  .container .edit{
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 16px;
-    color: #666;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  .container .edit:hover{
-    text-decoration: underline;
-  }
-  .container .star-widget input{
-    display: none;
-  }
-  .star-widget label{
-    font-size: 75px;
-    color: #444;
-    padding: 10px;
-    float: right;
-    transition: all 0.2s ease;
-  }
-  input:not(:checked) ~ label:hover,
-  input:not(:checked) ~ label:hover ~ label{
-    color: #fd4;
-  }
-  input:checked ~ label{
-    color: #fd4;
-  }
-  input#rate-5:checked ~ label{
-    color: #fe7;
-    text-shadow: 0 0 20px #952;
-  }
-  #rate-1:checked ~ form header:before{
-    content: "I just hate it!";
-  }
-  #rate-2:checked ~ form header:before{
-    content: "I don't like it!";
-  }
-  #rate-3:checked ~ form header:before{
-    content: "I like it!";
-  }
-  #rate-4:checked ~ form header:before{
-    content: "I love it!";
-  }
-  #rate-5:checked ~ form header:before{
-    content: "It is awesome!";
-  }
-  .container form{
-    display: none;
-  }
-  input:checked ~ form{
-    display: block;
-  }
-  form header{
-    width: 100%;
-    font-size: 25px;
-    color: #fe7;
-    font-weight: 500;
-    margin: 5px 0 20px 0;
-    text-align: center;
-    transition: all 0.2s ease;
-  }
-  form .textarea{
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
-  }
-  form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    color: #eee;
-    border: 1px solid #333;
-    background: #222;
-    padding: 10px;
-    font-size: 17px;
-    resize: none;
-  }
-  .textarea textarea:focus{
-    border-color: #444;
-  }
-  form .btn{
-    height: 45px;
-    width: 100%;
-    margin: 15px 0;
-  }
-  form .btn button{
-    height: 100%;
-    width: 100%;
-    border: 1px solid #444;
-    outline: none;
-    background: #222;
-    color: #999;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  form .btn button:hover{
-    background: #1b1b1b;
-  }
-
-    /* Charts */
-
-    #chartdiv1 {
-        width: 50%;
-        height: 600px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 1%;
-    }
-
-    #chartdiv {
-        width: 100%;
-        height: 400px;
-    }
-
-    #chartdiv2 {
-        width: 100%;
-        height: 400px;
-    }
-    
-    .chart1-text {
-        color: white;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .chart2-text {
-        color: white;
-        font-size: 30px;
-        text-align: center;
-        margin-top: 80px;
-    }
-
-    .chart3-text {
-        color: white;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .charts{
+    .container{
+        position: relative;
+        left: 490px;
+        width: 600px;
+        background: #111;
+        padding: 20px 30px;
+        border: 1px solid #444;
+        border-radius: 5px;
         display: flex;
-        justify-content: space-around;
-        margin-top: 4%;
-    }
-
-    .chart2{
-        width: 50%;
-    }
-
-    tspan {
-        color: var(--white);
-    }
-
-    @media only screen and (max-width: 1280px) {
-        .charts{
-            display: block;
-        }
-        #chartdiv2{
-            width: 100%;
-            height: 400px;
-        }
-        #chartdiv {
-            width: 100%;
-            height: 400px;
-        }
-        .chart2{
-            width: 100%;
-        }
-    }
-
-    @media only screen and (max-width: 870px) {
-        #chartdiv1 {
-            width: 90%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    @media only screen and (max-width: 790px) {
-        #chartdiv2 {
-            width: 100%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #chartdiv2>div>svg>g>rect {
-            width: 90%;
-            height: auto;
-        }
-    }
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .container .post{
+        display: none;
+      }
+      .container .text{
+        font-size: 25px;
+        color: #666;
+        font-weight: 500;
+      }
+      .container .edit{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .container .edit:hover{
+        text-decoration: underline;
+      }
+      .container .star-widget input{
+        display: none;
+      }
+      .star-widget label{
+        font-size: 75px;
+        color: #444;
+        padding: 10px;
+        float: right;
+        transition: all 0.2s ease;
+      }
+      input:not(:checked) ~ label:hover,
+      input:not(:checked) ~ label:hover ~ label{
+        color: #fd4;
+      }
+      input:checked ~ label{
+        color: #fd4;
+      }
+      input#rate-5:checked ~ label{
+        color: #fe7;
+        text-shadow: 0 0 20px #952;
+      }
+      #rate-1:checked ~ form header:before{
+        content: "I just hate it!";
+      }
+      #rate-2:checked ~ form header:before{
+        content: "I don't like it!";
+      }
+      #rate-3:checked ~ form header:before{
+        content: "I like it!";
+      }
+      #rate-4:checked ~ form header:before{
+        content: "I love it!";
+      }
+      #rate-5:checked ~ form header:before{
+        content: "It is awesome!";
+      }
+      .container form{
+        display: none;
+      }
+      input:checked ~ form{
+        display: block;
+      }
+      form header{
+        width: 100%;
+        font-size: 25px;
+        color: #fe7;
+        font-weight: 500;
+        margin: 5px 0 20px 0;
+        text-align: center;
+        transition: all 0.2s ease;
+      }
+      form .textarea{
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+      }
+      form .textarea textarea{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #eee;
+        border: 1px solid #333;
+        background: #222;
+        padding: 10px;
+        font-size: 17px;
+        resize: none;
+      }
+      .textarea textarea:focus{
+        border-color: #444;
+      }
+      form .btn{
+        height: 45px;
+        width: 100%;
+        margin: 15px 0;
+      }
+      form .btn button{
+        height: 100%;
+        width: 100%;
+        border: 1px solid #444;
+        outline: none;
+        background: #222;
+        color: #999;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      form .btn button:hover{
+        background: #1b1b1b;
+      }
     
     /*Footer*/
 

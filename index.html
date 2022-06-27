@@ -38,28 +38,27 @@
         <!--Section 1-->
         <section class="section1" id="home">
             <!--Parallax pictures-->
-             <img src="Website/images/background-image1.png" id="forest">
+             <img src="Website/images/background-image1.png" id="image">
 
             <h1 id="heading">Pyramis Pulmentum</h1>
         </section>
         <!--Section 2-->
-        <section class="section2" id="download">
-            <h1 id="pic-heading">Download the game</h1>
-            <div class="download">
-                <p id="download-text">Our project is 2D dungeon game where you have to kill Orcs and advance to new levels.</p>    
-                <div><img id="download-image" src="Website/images/background-image.png" alt="image"></div>
-                
-
-            <a href="./Game" download='image' class="download-btn">Download
-                <i class="fa fa-download"></i>
-            </a>
-            <!--Video-->
-                    <!--Actual live video-->
+            <section class="section2" id="download">
+                <h1 id="heading-section2">Download the game!</h1>
+                <div id="pic-grid">
+                    <div id="pic-container">
+                        <img class="game-pic" src="Pictures/Game_pic1.png">
+                    </div>
+                    <div class="pic-text">
+                        <h3 class="pic-text">Varg - Who is the son of Loki and this is the main reason he is hated by all the gods who send him a number of monsters. After he burns 7 churches, is sent to the underworld where he fights orcs including the strongest of them all, Urukkai. Varg is gifted with enviable magical skills and is married to Kari Rueslåtten. The only one who is kind to Varg is Dumbal, who is a wizard sent by Odin to stretch Varg.</h3>
+                        <a class = "download-button" href = "https://github.com/codingburgas/final-project-MZIlcheva19  ">Download</a>
+                    </div>
+                </div>
         <!--Section 3-->
         <section class="section3" id="about">
-            <h1 id="map-text">Items and Heroes</h1>
+            <h1 id="cards-text">Items and Heroes</h1>
             <!--Pop-ups-->
-            <h3 id="pic-text">Click on the cards to see more detail!</h3>
+            <h3 id="cards-text">Click on the cards to see more detail!</h3>
             <!--Flipping info cards-->
             <div id="info-cards">
                 <!--Card 1-->
@@ -188,7 +187,7 @@
 
         <!--Section 4-->
         <section class="section4" id="feedback">
-        <h1 id="map-text">Tell us what you think.</h1> 
+        <h1 id="feedback-text">Tell us what you think!</h1> 
         <div class="container">
             <div class="post">
               <div class="text">Thanks for rating us!</div>
@@ -284,23 +283,8 @@
         </section>
 
     </main>
-
-    <script src="https://kit.fontawesome.com/58dbd7504d.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script src="https://www.amcharts.com/lib/4/core.js"></script>
-    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://www.amcharts.com/lib/4/plugins/venn.js"></script>
-    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-    <script src="Website/JavaScript/map.js"></script>
+    
     <script src="Website/JavaScript/main.js"></script>
     <script src="Website/JavaScript/parallax.js"></script>
-    <script src="Website/JavaScript/charts.js"></script>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('serviceWorker.js');
-        }
-    </script>
 </body>
-
 </html>
