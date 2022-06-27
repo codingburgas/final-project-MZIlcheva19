@@ -228,20 +228,6 @@
         pointer-events: none;
     }
 
-    #rocks {
-        z-index: 2;
-    }
-
-    @media only screen and (max-width: 550px) {
-        #rocks, #bird1, #bird2 {
-            display: none;
-        }
-    }
-
-    #water {
-        z-index: 2;
-    }
-
     #heading {
         text-align: center;
         font-size: 73px;
