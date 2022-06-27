@@ -3,11 +3,11 @@
 <img src="Pictures/Banner.png" width=1000px>
 <br>
 <div>
-   <img src = "https://img.shields.io/github/languages/count/MZIlcheva19/final-project-MZIlcheva19?style=for-the-badge">
-   <img src = "https://img.shields.io/github/contributors/MZIlcheva19/final-project-MZIlcheva19?style=for-the-badge">
-   <img src = "https://img.shields.io/github/repo-size/MZIlcheva19/final-project-MZIlcheva19?style=for-the-badge">
-   <img src = "https://img.shields.io/github/last-commit/MZIlcheva19/final-project-MZIlcheva19?style=for-the-badge">
-   <img src = "https://img.shields.io/github/languages/top/MZIlcheva19/final-project-MZIlcheva19?style=for-the-badge">
+   <img src = "https://img.shields.io/github/languages/count/codingburgas/final-project-MZIlcheva19?style=for-the-badge">
+   <img src = "https://img.shields.io/github/contributors/codingburgas/final-project-MZIlcheva19?style=for-the-badge">
+   <img src = "https://img.shields.io/github/repo-size/codingburgas/final-project-MZIlcheva19?style=for-the-badge">
+   <img src = "https://img.shields.io/github/last-commit/codingburgas/final-project-MZIlcheva19?style=for-the-badge">
+   <img src = "https://img.shields.io/github/languages/top/codingburgas/final-project-MZIlcheva19?style=for-the-badge">
 </div>
 </p>
 </div>

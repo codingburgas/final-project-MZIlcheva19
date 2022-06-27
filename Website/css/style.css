@@ -21,7 +21,7 @@
     /* Custom selection */
     ::selection{
         color: white;
-        background-color:rgba(44, 48, 116, 0.589);
+        background-color:rgba(190, 35, 35, 0.801);
     }
 
     /* Custom scrollbar */
@@ -215,8 +215,6 @@
         z-index: 3;
         mix-blend-mode: color;
     }
-    
-    /* Parallax images */
 
     .section1 img {
         position: absolute;
@@ -288,6 +286,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Download button */
+
     .download-button {
         width: 70%;
         font-size: 20px;
@@ -349,130 +350,6 @@
         grid-column: 1/3;
         background-color: var(--mediumblue);
         z-index: 0;
-    }
-
-    /* Search button */
-
-    #search-button {
-        margin-top: 5%;
-        margin-left: 30%;
-        width: 40%;
-        font-size: 100%;
-        padding: 0.6% 3% 0.8% 3%;
-        border: none;
-        background-color: var(--darkteal);
-        color: var(--white);
-        border-radius: 12px;
-    }
-
-    @media only screen and (max-width: 880px) {
-        #search-button {
-            width: 60%;
-            margin-left: 20%;
-            height: 1.5%;
-            display: block;
-            margin: 7% auto 1% auto;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
-        #search-button {
-            width: 80%;
-            margin-left: 10%;
-            height: 1%;
-            display: block;
-            margin: 7% auto 1% auto;
-        }
-    }
-    
-    #search-button:hover>.search-text {
-        width: 60%;
-        padding: 0 6px;
-    }
-    
-    .search-text:focus {
-        width: 60%;
-        padding: 0 6px;
-    }
-    
-    .search-text {
-        transform: translateY(15%);
-        border: none;
-        background: none;
-        outline: none;
-        float: right;
-        padding: 0;
-        color: var(--white);
-        font-size: 80%;
-        transition: 0.4s;
-        line-height: 100%;
-        width: 0%;
-    }
-
-    /* Map */
-
-    #mapid {
-        margin-top: 5vh;
-        height: 650px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 0;
-    }
-    
-    .leaflet-control-attribution {
-        display: none;
-    }
-    
-    .info1, .info2, .info3, .info4, .info5, .info6, .info7 {
-        position: relative;
-        margin-top: -542px;
-        margin-bottom: 100px;
-        margin-left: 19%;
-        border-radius: 15px;
-        width: 60%;
-        height: 400px;
-        display: none;
-        background: var(--darkteal);
-    }
-
-    .exit-button, .exit-button1, .exit-button2, .exit-button3, .exit-button4, .exit-button5, .exit-button6 {
-        position: absolute;
-        right: -1px;
-        top: -1px;
-        cursor: pointer;
-        outline: none;
-        border: none;
-        border-radius: 15px;
-        padding: .8em 1em;
-        background: rgba(255, 255, 255, 0.144);
-        box-shadow: rgba(255, 255, 255, 0.342) 0px 0px 0px 0.5px inset;
-        color: var(--white);
-        font-size: 1em;
-    }
-
-    #text {
-        overflow: auto;
-        font-size: 18px;
-        text-align: center;
-        height: 80%;
-        color: var(--white);
-        line-height: 140%;
-        justify-self: center;
-        align-self: center;
-        padding: 10% 5% 10% 5%;
-    }
-
-    #text>ul {
-        list-style-type: none;
-    }
-
-    .lakes-links{
-        text-decoration: none;
-        color: #2dffc7;
-        letter-spacing: 1px;
-        grid-column: 1/2;
-
     }
 
     /*Rotating cards*/
@@ -650,7 +527,7 @@
         transform: rotateY(180deg);
     }
 
-    /*Birds pictures*/
+    /*Characters/items pictures*/
     
     .pic {
         margin-top: 10px;
@@ -839,101 +716,6 @@
       form .btn button:hover{
         background: #1b1b1b;
       }
-
-    /* Charts */
-
-    #chartdiv1 {
-        width: 50%;
-        height: 600px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 1%;
-    }
-
-    #chartdiv {
-        width: 100%;
-        height: 400px;
-    }
-
-    #chartdiv2 {
-        width: 100%;
-        height: 400px;
-    }
-    
-    .chart1-text {
-        color: white;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .chart2-text {
-        color: white;
-        font-size: 30px;
-        text-align: center;
-        margin-top: 80px;
-    }
-
-    .chart3-text {
-        color: white;
-        font-size: 25px;
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .charts{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 4%;
-    }
-
-    .chart2{
-        width: 50%;
-    }
-
-    tspan {
-        color: var(--white);
-    }
-
-    @media only screen and (max-width: 1280px) {
-        .charts{
-            display: block;
-        }
-        #chartdiv2{
-            width: 100%;
-            height: 400px;
-        }
-        #chartdiv {
-            width: 100%;
-            height: 400px;
-        }
-        .chart2{
-            width: 100%;
-        }
-    }
-
-    @media only screen and (max-width: 870px) {
-        #chartdiv1 {
-            width: 90%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    @media only screen and (max-width: 790px) {
-        #chartdiv2 {
-            width: 100%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #chartdiv2>div>svg>g>rect {
-            width: 90%;
-            height: auto;
-        }
-    }
     
     /*Footer*/
 
