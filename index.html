@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pyramis Pulmentum</title>
+    <link rel="stylesheet" type="text/css" href="Website/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--Add an logo to the title tab-->
+    <link rel="shortcut icon" href="Website/images/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <!--Nav bar-->
+        <nav>
+            <div class="logo">
+                <a href="#home" class="logotext">Pyramis Pulmentum</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#download">Download</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+            <!--Burger menu-->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!--Section 1-->
+        <section class="section1" id="home">
+            <!--Parallax pictures-->
+             <img src="Website/images/background-image1.png" id="image">
+
+            <h1 id="heading">Pyramis Pulmentum</h1>
+        </section>
+        <!--Section 2-->
+            <section class="section2" id="download">
+                <h1 id="heading-section2">Download the game!</h1>
+                <div id="pic-grid">
+                    <div id="pic-container">
+                        <img class="game-pic" src="Pictures/Game_pic1.png">
+                    </div>
+                    <div class="pic-text">
+                        <h3 class="pic-text">Varg - Who is the son of Loki and this is the main reason he is hated by all the gods who send him a number of monsters. After he burns 7 churches, is sent to the underworld where he fights orcs including the strongest of them all, Urukkai. Varg is gifted with enviable magical skills and is married to Kari Rueslåtten. The only one who is kind to Varg is Dumbal, who is a wizard sent by Odin to stretch Varg.</h3>
+                        <a class = "download-button" href = "https://github.com/codingburgas/final-project-MZIlcheva19  ">Download</a>
+                    </div>
+                </div>
+        <!--Section 3-->
+        <section class="section3" id="about">
+            <h1 id="cards-text">Items and Heroes</h1>
+            <!--Pop-ups-->
+            <h3 id="cards-text">Click on the cards to see more detail!</h3>
+            <!--Flipping info cards-->
+            <div id="info-cards">
+                <!--Card 1-->
+                <div class="scene1">
+                    <div class="card1">
+                        <div class="face front1">
+                            <img class="pic" src="Website/images/Vard.png">
+                            <p class="pic-names">Varg</p>
+                        </div>
+                        <div class="face back1">
+                            <ul class="cardText">
+                                <li>Main character</li>
+                                <li>27 301 orcs killed</li>
+                                <li>son of Loki</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="scene2">
+                    <div class="card2">
+                        <div class="face front2">
+                            <img class="pic" src="Website/images/Wizzard.png">
+                            <p class="pic-names">Dumbal</p>
+                        </div>
+                        <div class="face back2">
+                            <ul class="cardText">
+                                <li>Magician</li>
+                                <li>Friend of Vard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="scene3">
+                    <div class="card3">
+                        <div class="face front3">
+                            <img class="pic" src="Website/images/Ogre.png">
+                            <p class="pic-names">Uruk'hai</p>
+                        </div>
+                        <div class="face back3">
+                            <ul class="cardText">
+                                <li>Orc</li>
+                                <li>Main villain</li>
+                                <li>64 938 kills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="scene4">
+                    <div class="card4">
+                        <div class="face front4">
+                            <img class="pic" src="Website/images/Skeleton.png">
+                            <p class="pic-names">Skeleton</p>
+                        </div>
+                        <div class="face back4">
+                            <ul class="cardText">
+                                <li>low health</li>
+                                <li>low damage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 5-->
+                <div class="scene5">
+                    <div class="card5">
+                        <div class="face front5">
+                            <img class="pic" src="Website/images/Orc_Masked.png">
+                            <p class="pic-names">Orc</p>
+                        </div>
+                        <div class="face back5">
+                            <ul class="cardText">
+                                <li>low health</li>
+                                <li>medium damage</li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                <!--Card 6-->
+                  <div class="scene6">
+                    <div class="card6">
+                        <div class="face front6">
+                            <img class="pic" src="Website/images/weapon_regular_sword_1.png">
+                            <p class="pic-names">Sword</p>
+                        </div>
+                        <div class="face back6">
+                            <ul class="cardText">
+                                <li>low durability</li>
+                                <li>low damage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                 <!--Card 7-->
+                 <div class="scene7">
+                    <div class="card7">
+                        <div class="face front7">
+                            <img class="pic" src="Website/images/Chest_Gold_Empty_1.png">
+                            <p class="pic-names">Chest</p>
+                        </div>
+                        <div class="face back7">
+                            <ul class="cardText">
+                                <li>Gives loot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                 <!--Card 8-->
+                 <div class="scene8">
+                    <div class="card8">
+                        <div class="face front8">
+                            <img class="pic" src="Website/images/flask_big_red.png">
+                            <p class="pic-names">Potion</p>
+                        </div>
+                        <div class="face back8">
+                            <ul class="cardText">
+                                <li>Gives health</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 4-->
+        <section class="section4" id="feedback">
+        <h1 id="feedback-text">Tell us what you think!</h1> 
+        <div class="container">
+            <div class="post">
+              <div class="text">Thanks for rating us!</div>
+              <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+              <input type="radio" name="rate" id="rate-5">
+              <label for="rate-5" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-4">
+              <label for="rate-4" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-3">
+              <label for="rate-3" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-2">
+              <label for="rate-2" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-1">
+              <label for="rate-1" class="fas fa-star"></label>
+              <form action="#">
+                <header></header>
+                <div class="textarea">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Post</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <script>
+            const btn = document.querySelector("button");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".star-widget");
+            const editBtn = document.querySelector(".edit");
+            btn.onclick = ()=>{
+              widget.style.display = "none";
+              post.style.display = "block";
+              editBtn.onclick = ()=>{
+                widget.style.display = "block";
+                post.style.display = "none";
+              }
+              return false;
+            }
+          </script>
+        </section>
+
+
+        <!--Section 5-->
+        <section class="section5">
+            <!--Footer-->
+            <div class="footer-distributed">
+
+                <div class="footer-left">
+
+                    <h3>Pyramis Pulmentum</h3>
+
+                    <p class="footer-links">
+                        <a href="#download">Download</a> |
+                        <a href="#about">About</a> |
+                        <a href="#feedback">Feedback</a> 
+                    </p>
+
+                    <p class="footer-company-name">© 2022 Pyramis Pulmentum - No pain, no gain</p>
+                </div>
+
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>8000,
+                            Vasil Levski 34</span> Bulgaria, Burgas - 1234</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>088-634-6857</p>
+                    </div>
+                    <div>
+                        <p><i class="fa fa-envelope"></i>
+                            <nbsp;><a href="mailto:PyramisPulmentumProject@gmail.com">PyramisPulmentumProject@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>Social media</span> <strong>Support us by following us in our social media platforms!</strong><br>
+                        <strong>Thank you in advance! </strong></p>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="Website/JavaScript/main.js"></script>
+    <script src="Website/JavaScript/parallax.js"></script>
+</body>
+</html>
